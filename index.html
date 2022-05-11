@@ -70,7 +70,7 @@
 						<br />
 						для вашего бизнеса
 					</h1>
-					<button on type="button" class="button">Заказать услугу</button>
+					<button on type="button" class="button" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 			<!-- ==== features section ==== -->
@@ -117,24 +117,33 @@
 					</ul>
 				</div>
 			</section>
-			<!-- ==== section what are we doing ==== -->
-			<section class="section">
+			<!-- ==== work section ==== -->
+			<section class="section work">
 				<div class="container">
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="work-list list">
 						<li class="work-item">
 							<img src="./images/box1_sq.jpg" alt="Разработка декстопных приложений" width="370" height="294" />
+							<div class="work-item-label">
+								<p class="label-description">Десктопные приложения</p>
+							</div>
 						</li>
 						<li class="work-item">
 							<img src="./images/box2_sq.jpg" alt="Разработка мобильных приложений" width="370" height="294" />
+							<div class="work-item-label">
+								<p class="label-description">Мобильные приложения</p>
+							</div>
 						</li>
 						<li class="work-item">
 							<img src="./images/box3_sq.jpg" alt="Разработка дизайнерских приложений" width="370" height="294" />
+							<div class="work-item-label">
+								<p class="label-description">Дизайнерские решения</p>
+							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
-			<!-- ==== section our team ==== -->
+			<!-- ==== team section ==== -->
 			<section class="section team">
 				<div class="container">
 					<h2 class="section-title">Наша команда</h2>
@@ -323,7 +332,9 @@
 					<address class="address">
 						<ul class="address-list list">
 							<li class="address-item">
-								<a href="https://goo.gl/maps/FhsFouY1L5zsYzUFA" class="link">г. Киев, пр-т Леси Украинки, 26</a>
+								<a href="https://goo.gl/maps/FhsFouY1L5zsYzUFA" target="_blank" rel="noopener noreferrer" lang="en" aria-label="Google maps" class="link">
+									г. Киев, пр-т Леси Украинки, 26
+								</a>
 							</li>
 							<li class="address-item">
 								<a href="mailto:info@example.com" class="link">info@example.com</a>
@@ -361,5 +372,13 @@
 				</div>
 			</div>
 		</footer>
+		<div class="backdrop is-hidden" data-modal>
+			<div class="modal">
+				<button class="close-button" aria-label="Закрыть" data-modal-close>
+					<svg class="modal-icon" width="11" height="11"><use href="./images/icons.svg#icon-close-btn"></use></svg>
+				</button>
+			</div>
+		</div>
+		<script src="./js/modal.js"></script>
 	</body>
 </html>
