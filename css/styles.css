@@ -421,8 +421,6 @@ p {
 .page-footer > .wrapper-social-links {
 	display: block;
 	margin-right: auto;
-
-	transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .social-links-title {
 	margin-bottom: 20px;
@@ -460,9 +458,6 @@ p {
 	opacity: 0;
 	pointer-events: none;
 	visibility: hidden;
-
-	transition: opacity var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function),
-		visibility var(--transition-duration) var(--transition-timing-function), visibility var(--transition-duration) var(--transition-timing-function);
 }
 .modal {
 	position: absolute;
@@ -559,7 +554,7 @@ p {
 }
 .projects-item > .link {
 	display: inline-block;
-	transition: color var(--transition-duration) var(--transition-timing-function), box-shadow var(--transition-duration) var(--transition-timing-function);
+	transition: box-shadow var(--transition-duration) var(--transition-timing-function);
 }
 .projects-item > .link:hover,
 .projects-item > .link:focus {
@@ -616,7 +611,7 @@ p {
 
 	transition: transform var(--transition-duration) var(--transition-timing-function);
 }
-.projects-item:hover .overlay-description,
-.projects-item:hover .overlay-description {
+.projects-item > .link:hover .overlay-description,
+.projects-item > .link:focus .overlay-description {
 	transform: translateY(-100%);
 }
